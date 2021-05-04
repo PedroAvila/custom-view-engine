@@ -15,5 +15,10 @@ namespace CustomViewEngine.Controllers
             var vm = new Store();
             return View(vm);
         }
+
+        public ActionResult ShowError()
+        {
+            return View("Error");
+        }
     }
 }

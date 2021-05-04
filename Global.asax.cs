@@ -13,6 +13,7 @@ namespace CustomViewEngine
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ViewEngines.Engines.Add(new ViewEngine.CustomViewEngine());
         }
     }
 }
